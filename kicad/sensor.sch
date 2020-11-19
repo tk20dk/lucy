@@ -1,0 +1,556 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "Lucy"
+Date "2020-11-19"
+Rev "v1.0"
+Comp "www.2-0.dk"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR01
+U 1 1 5E07A6EC
+P 4350 4800
+F 0 "#PWR01" H 4350 4550 50  0001 C CNN
+F 1 "GND" V 4350 4700 50  0000 R CNN
+F 2 "" H 4350 4800 50  0001 C CNN
+F 3 "" H 4350 4800 50  0001 C CNN
+	1    4350 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4000 5500 4000
+Wire Wire Line
+	5750 3900 5550 3900
+Wire Wire Line
+	5750 3800 5600 3800
+Wire Wire Line
+	5450 4100 5750 4100
+$Comp
+L power:GND #PWR022
+U 1 1 5E080B36
+P 6300 4700
+F 0 "#PWR022" H 6300 4450 50  0001 C CNN
+F 1 "GND" H 6300 4550 50  0000 C CNN
+F 2 "" H 6300 4700 50  0001 C CNN
+F 3 "" H 6300 4700 50  0001 C CNN
+	1    6300 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6650 4200 2    50   Input ~ 0
+mux_a0
+Text GLabel 6650 4300 2    50   Input ~ 0
+mux_a1
+Text GLabel 6650 4400 2    50   Input ~ 0
+mux_a2
+Text GLabel 6650 4500 2    50   Input ~ 0
+mux_en
+Text GLabel 6850 4000 2    50   BiDi ~ 0
+mux_data
+$Comp
+L Device:C C10
+U 1 1 5E0D7CFC
+P 6400 5400
+F 0 "C10" H 6515 5446 50  0000 L CNN
+F 1 "100n" H 6515 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6438 5250 50  0001 C CNN
+F 3 "~" H 6400 5400 50  0001 C CNN
+	1    6400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5E0D7D03
+P 6400 5550
+F 0 "#PWR016" H 6400 5300 50  0001 C CNN
+F 1 "GND" H 6405 5377 50  0000 C CNN
+F 2 "" H 6400 5550 50  0001 C CNN
+F 3 "" H 6400 5550 50  0001 C CNN
+	1    6400 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR015
+U 1 1 5E0D851B
+P 6400 5250
+F 0 "#PWR015" H 6400 5100 50  0001 C CNN
+F 1 "+3V3" H 6415 5423 50  0000 C CNN
+F 2 "" H 6400 5250 50  0001 C CNN
+F 3 "" H 6400 5250 50  0001 C CNN
+	1    6400 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5600 5450 5600
+Wire Wire Line
+	5550 5600 5600 5600
+$Comp
+L power:GND #PWR019
+U 1 1 5E0CBAF2
+P 5900 5200
+F 0 "#PWR019" H 5900 4950 50  0001 C CNN
+F 1 "GND" H 5905 5027 50  0000 C CNN
+F 2 "" H 5900 5200 50  0001 C CNN
+F 3 "" H 5900 5200 50  0001 C CNN
+	1    5900 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5E0CD636
+P 5900 5600
+F 0 "#PWR020" H 5900 5350 50  0001 C CNN
+F 1 "GND" H 5905 5427 50  0000 C CNN
+F 2 "" H 5900 5600 50  0001 C CNN
+F 3 "" H 5900 5600 50  0001 C CNN
+	1    5900 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5E0CDAEC
+P 5150 5600
+F 0 "#PWR012" H 5150 5350 50  0001 C CNN
+F 1 "GND" H 5155 5427 50  0000 C CNN
+F 2 "" H 5150 5600 50  0001 C CNN
+F 3 "" H 5150 5600 50  0001 C CNN
+	1    5150 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5E0CDF48
+P 5150 5200
+F 0 "#PWR011" H 5150 4950 50  0001 C CNN
+F 1 "GND" H 5155 5027 50  0000 C CNN
+F 2 "" H 5150 5200 50  0001 C CNN
+F 3 "" H 5150 5200 50  0001 C CNN
+	1    5150 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 2550 5600 2550
+Wire Wire Line
+	5500 2550 5450 2550
+$Comp
+L power:GND #PWR010
+U 1 1 5E0DC0DF
+P 5150 2950
+F 0 "#PWR010" H 5150 2700 50  0001 C CNN
+F 1 "GND" H 5155 2777 50  0000 C CNN
+F 2 "" H 5150 2950 50  0001 C CNN
+F 3 "" H 5150 2950 50  0001 C CNN
+	1    5150 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5E0DC0E5
+P 5150 2550
+F 0 "#PWR09" H 5150 2300 50  0001 C CNN
+F 1 "GND" H 5155 2377 50  0000 C CNN
+F 2 "" H 5150 2550 50  0001 C CNN
+F 3 "" H 5150 2550 50  0001 C CNN
+	1    5150 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5E0DC0EB
+P 5900 2550
+F 0 "#PWR017" H 5900 2300 50  0001 C CNN
+F 1 "GND" H 5905 2377 50  0000 C CNN
+F 2 "" H 5900 2550 50  0001 C CNN
+F 3 "" H 5900 2550 50  0001 C CNN
+	1    5900 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5E0DC0F1
+P 5900 2950
+F 0 "#PWR018" H 5900 2700 50  0001 C CNN
+F 1 "GND" H 5905 2777 50  0000 C CNN
+F 2 "" H 5900 2950 50  0001 C CNN
+F 3 "" H 5900 2950 50  0001 C CNN
+	1    5900 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR021
+U 1 1 5E0BA4DA
+P 6100 4700
+F 0 "#PWR021" H 6100 4550 50  0001 C CNN
+F 1 "+3V3" H 6100 4850 50  0000 C CNN
+F 2 "" H 6100 4700 50  0001 C CNN
+F 3 "" H 6100 4700 50  0001 C CNN
+	1    6100 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E0AB0A7
+P 6750 3750
+F 0 "R1" H 6820 3796 50  0000 L CNN
+F 1 "4k7" H 6820 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6680 3750 50  0001 C CNN
+F 3 "~" H 6750 3750 50  0001 C CNN
+	1    6750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L lucy:TMUX1208 U1
+U 1 1 5E0B9954
+P 6200 4150
+F 0 "U1" H 6200 4765 50  0000 C CNN
+F 1 "TMUX1208" H 6200 4674 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6100 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tmux1208.pdf" H 6200 4750 50  0001 C CNN
+	1    6200 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 3600 1    50   Input ~ 0
+mux_en
+Wire Wire Line
+	5450 4200 5750 4200
+Wire Wire Line
+	5750 4300 5500 4300
+Wire Wire Line
+	5750 4400 5550 4400
+Wire Wire Line
+	5750 4500 5600 4500
+Wire Wire Line
+	6650 4000 6750 4000
+Wire Wire Line
+	6750 3900 6750 4000
+Connection ~ 6750 4000
+Wire Wire Line
+	6750 4000 6850 4000
+$Comp
+L lucy:ESD5Z3.3 D4
+U 1 1 5F101AEC
+P 5750 2550
+F 0 "D4" H 5750 2766 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5750 2675 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5750 2350 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5700 2550 50  0001 C CNN
+	1    5750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D3
+U 1 1 5F107983
+P 5750 2950
+F 0 "D3" H 5750 3166 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5750 3075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5750 2750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5700 2950 50  0001 C CNN
+	1    5750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D6
+U 1 1 5F107F5F
+P 5300 2950
+F 0 "D6" H 5300 2734 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5300 2825 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5300 2750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5250 2950 50  0001 C CNN
+	1    5300 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D5
+U 1 1 5F108561
+P 5300 2550
+F 0 "D5" H 5300 2334 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5300 2425 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5300 2350 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5250 2550 50  0001 C CNN
+	1    5300 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D7
+U 1 1 5F10B429
+P 5300 5200
+F 0 "D7" H 5300 4984 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5300 5075 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5300 5000 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5250 5200 50  0001 C CNN
+	1    5300 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D8
+U 1 1 5F10C651
+P 5300 5600
+F 0 "D8" H 5300 5384 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5300 5475 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5300 5400 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5250 5600 50  0001 C CNN
+	1    5300 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D9
+U 1 1 5F10CD8C
+P 5750 5600
+F 0 "D9" H 5750 5816 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5750 5725 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5750 5400 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5700 5600 50  0001 C CNN
+	1    5750 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L lucy:ESD5Z3.3 D10
+U 1 1 5F10D185
+P 5750 5200
+F 0 "D10" H 5750 5416 50  0000 C CNN
+F 1 "ESD5Z3.3" H 5750 5325 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 5750 5000 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD5Z2.5T1-D.PDF" H 5700 5200 50  0001 C CNN
+	1    5750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FB52B70
+P 4350 3400
+F 0 "#PWR04" H 4350 3150 50  0001 C CNN
+F 1 "GND" V 4350 3300 50  0000 R CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5FB566D3
+P 4350 3800
+F 0 "#PWR08" H 4350 3550 50  0001 C CNN
+F 1 "GND" V 4350 3700 50  0000 R CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5FB57864
+P 4350 4000
+F 0 "#PWR027" H 4350 3750 50  0001 C CNN
+F 1 "GND" V 4350 3900 50  0000 R CNN
+F 2 "" H 4350 4000 50  0001 C CNN
+F 3 "" H 4350 4000 50  0001 C CNN
+	1    4350 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 5FB58963
+P 4350 4200
+F 0 "#PWR057" H 4350 3950 50  0001 C CNN
+F 1 "GND" V 4350 4100 50  0000 R CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 5FB59C9B
+P 4350 4400
+F 0 "#PWR061" H 4350 4150 50  0001 C CNN
+F 1 "GND" V 4350 4300 50  0000 R CNN
+F 2 "" H 4350 4400 50  0001 C CNN
+F 3 "" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR063
+U 1 1 5FB5CB44
+P 4350 4600
+F 0 "#PWR063" H 4350 4350 50  0001 C CNN
+F 1 "GND" V 4350 4500 50  0000 R CNN
+F 2 "" H 4350 4600 50  0001 C CNN
+F 3 "" H 4350 4600 50  0001 C CNN
+	1    4350 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 2950 5600 3800
+Wire Wire Line
+	5550 2550 5550 3900
+Wire Wire Line
+	5500 2550 5500 4000
+Wire Wire Line
+	5450 2950 5450 4100
+Wire Wire Line
+	5450 4200 5450 5200
+Wire Wire Line
+	5500 4300 5500 5600
+Wire Wire Line
+	5550 4400 5550 5600
+Wire Wire Line
+	5600 4500 5600 5200
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5FB54780
+P 4150 4100
+F 0 "J7" H 4300 4000 50  0000 C CNN
+F 1 "Channel4" H 4450 4100 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 4100 50  0001 C CNN
+F 3 "~" H 4150 4100 50  0001 C CNN
+	1    4150 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5FB602D0
+P 4150 3900
+F 0 "J6" H 4300 3800 50  0000 C CNN
+F 1 "Channel3" H 4450 3900 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 3900 50  0001 C CNN
+F 3 "~" H 4150 3900 50  0001 C CNN
+	1    4150 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5FB60596
+P 4150 3700
+F 0 "J4" H 4300 3600 50  0000 C CNN
+F 1 "Channel2" H 4450 3700 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FB60A2A
+P 4150 3500
+F 0 "J1" H 4300 3400 50  0000 C CNN
+F 1 "Channel1" H 4450 3500 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 3500 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5FB6244E
+P 4150 4300
+F 0 "J8" H 4300 4200 50  0000 C CNN
+F 1 "Channel5" H 4450 4300 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 4300 50  0001 C CNN
+F 3 "~" H 4150 4300 50  0001 C CNN
+	1    4150 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 5FB6294F
+P 4150 4500
+F 0 "J9" H 4300 4400 50  0000 C CNN
+F 1 "Channel6" H 4450 4500 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 4500 50  0001 C CNN
+F 3 "~" H 4150 4500 50  0001 C CNN
+	1    4150 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5FB62EA2
+P 4150 4700
+F 0 "J10" H 4300 4600 50  0000 C CNN
+F 1 "Channel7" H 4450 4700 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 4700 50  0001 C CNN
+F 3 "~" H 4150 4700 50  0001 C CNN
+	1    4150 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5FB6342E
+P 4150 4900
+F 0 "J11" H 4300 4800 50  0000 C CNN
+F 1 "Channel8" H 4450 4900 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 4150 4900 50  0001 C CNN
+F 3 "~" H 4150 4900 50  0001 C CNN
+	1    4150 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FB53F1B
+P 4350 3600
+F 0 "#PWR06" H 4350 3350 50  0001 C CNN
+F 1 "GND" V 4350 3500 50  0000 R CNN
+F 2 "" H 4350 3600 50  0001 C CNN
+F 3 "" H 4350 3600 50  0001 C CNN
+	1    4350 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 4100 4350 4100
+Connection ~ 5450 4100
+Wire Wire Line
+	5450 4200 4650 4200
+Wire Wire Line
+	4650 4200 4650 4300
+Wire Wire Line
+	4650 4300 4350 4300
+Connection ~ 5450 4200
+Wire Wire Line
+	5500 4300 4700 4300
+Wire Wire Line
+	4700 4300 4700 4500
+Wire Wire Line
+	4700 4500 4350 4500
+Connection ~ 5500 4300
+Wire Wire Line
+	4750 4400 4750 4700
+Wire Wire Line
+	4750 4700 4350 4700
+Wire Wire Line
+	4750 4400 5550 4400
+Connection ~ 5550 4400
+Wire Wire Line
+	5600 4500 4800 4500
+Wire Wire Line
+	4800 4500 4800 4900
+Wire Wire Line
+	4800 4900 4350 4900
+Connection ~ 5600 4500
+Wire Wire Line
+	5500 4000 4650 4000
+Wire Wire Line
+	4650 4000 4650 3900
+Wire Wire Line
+	4650 3900 4350 3900
+Connection ~ 5500 4000
+Wire Wire Line
+	5550 3900 4700 3900
+Wire Wire Line
+	4700 3900 4700 3700
+Wire Wire Line
+	4700 3700 4350 3700
+Connection ~ 5550 3900
+Wire Wire Line
+	5600 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 3500
+Wire Wire Line
+	4750 3500 4350 3500
+Connection ~ 5600 3800
+$EndSCHEMATC

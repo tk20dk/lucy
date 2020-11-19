@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name lucy)(type KiCad)(uri ${KIPRJMOD}/lucy.pretty)(options "")(descr ""))
+)
