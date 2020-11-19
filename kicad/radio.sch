@@ -1,0 +1,225 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "Lucy"
+Date "2020-11-19"
+Rev "v1.0"
+Comp "www.2-0.dk"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L lucy:CON-SMA ANT?
+U 1 1 5E07F643
+P 4500 4000
+AR Path="/5E07F643" Ref="ANT?"  Part="1" 
+AR Path="/5E07F403/5E07F643" Ref="ANT1"  Part="1" 
+F 0 "ANT1" H 4551 4493 60  0000 C CNN
+F 1 "SMA" H 4551 4387 60  0000 C CNN
+F 2 "lucy:CON-SMA" H 4500 3800 60  0001 C CNN
+F 3 "" H 4500 3800 60  0000 C CNN
+	1    4500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4450 4350 4400
+Wire Wire Line
+	4450 4400 4450 4450
+Connection ~ 4450 4450
+Wire Wire Line
+	4450 4450 4350 4450
+Wire Wire Line
+	4550 4400 4550 4450
+Connection ~ 4550 4450
+Wire Wire Line
+	4550 4450 4500 4450
+Wire Wire Line
+	4650 4400 4650 4450
+Wire Wire Line
+	4650 4450 4550 4450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E07F653
+P 5300 3200
+AR Path="/5E07F653" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F653" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 5300 3050 50  0001 C CNN
+F 1 "+3V3" V 5315 3328 50  0000 L CNN
+F 2 "" H 5300 3200 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E07F659
+P 5300 3300
+AR Path="/5E07F659" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F659" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 5300 3050 50  0001 C CNN
+F 1 "GND" V 5305 3172 50  0000 R CNN
+F 2 "" H 5300 3300 50  0001 C CNN
+F 3 "" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E07F65F
+P 5300 3400
+AR Path="/5E07F65F" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F65F" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 5300 3150 50  0001 C CNN
+F 1 "GND" V 5305 3272 50  0000 R CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E07F665
+P 4500 4450
+AR Path="/5E07F665" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F665" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 4500 4200 50  0001 C CNN
+F 1 "GND" H 4505 4277 50  0000 C CNN
+F 2 "" H 4500 4450 50  0001 C CNN
+F 3 "" H 4500 4450 50  0001 C CNN
+	1    4500 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4450
+Wire Wire Line
+	4500 4450 4450 4450
+$Comp
+L power:GND #PWR?
+U 1 1 5E07F66D
+P 5300 4000
+AR Path="/5E07F66D" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F66D" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 5300 3750 50  0001 C CNN
+F 1 "GND" V 5305 3872 50  0000 R CNN
+F 2 "" H 5300 4000 50  0001 C CNN
+F 3 "" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	0    1    1    0   
+$EndComp
+Text GLabel 5300 3600 0    50   Input ~ 0
+radio_reset
+Wire Wire Line
+	4800 3900 5300 3900
+Text GLabel 6400 3150 2    50   Input ~ 0
+radio_cs
+Text GLabel 6400 3250 2    50   Input ~ 0
+spi_sck
+Text GLabel 6400 3350 2    50   Output ~ 0
+spi_miso
+Text GLabel 6400 3450 2    50   Input ~ 0
+spi_mosi
+Text GLabel 6400 3550 2    50   BiDi ~ 0
+radio_dio0
+Text GLabel 6400 3650 2    50   BiDi ~ 0
+radio_dio1
+Text GLabel 6400 3750 2    50   BiDi ~ 0
+radio_dio2
+$Comp
+L Device:C C?
+U 1 1 5E07F67C
+P 5900 1950
+AR Path="/5E07F67C" Ref="C?"  Part="1" 
+AR Path="/5E07F403/5E07F67C" Ref="C17"  Part="1" 
+F 0 "C17" H 6015 1996 50  0000 L CNN
+F 1 "100n" H 6015 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5938 1800 50  0001 C CNN
+F 3 "~" H 5900 1950 50  0001 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E07F683
+P 5900 2100
+AR Path="/5E07F683" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F683" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 5900 1850 50  0001 C CNN
+F 1 "GND" H 5905 1927 50  0000 C CNN
+F 2 "" H 5900 2100 50  0001 C CNN
+F 3 "" H 5900 2100 50  0001 C CNN
+	1    5900 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E07F689
+P 5900 1800
+AR Path="/5E07F689" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E07F689" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 5900 1650 50  0001 C CNN
+F 1 "+3V3" H 5915 1973 50  0000 C CNN
+F 2 "" H 5900 1800 50  0001 C CNN
+F 3 "" H 5900 1800 50  0001 C CNN
+	1    5900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E0FCF7E
+P 6350 1950
+AR Path="/5E0FCF7E" Ref="C?"  Part="1" 
+AR Path="/5E07F403/5E0FCF7E" Ref="C18"  Part="1" 
+F 0 "C18" H 6465 1996 50  0000 L CNN
+F 1 "10u" H 6465 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6388 1800 50  0001 C CNN
+F 3 "~" H 6350 1950 50  0001 C CNN
+	1    6350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E0FCF84
+P 6350 2100
+AR Path="/5E0FCF84" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E0FCF84" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 6350 1850 50  0001 C CNN
+F 1 "GND" H 6355 1927 50  0000 C CNN
+F 2 "" H 6350 2100 50  0001 C CNN
+F 3 "" H 6350 2100 50  0001 C CNN
+	1    6350 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E0FCF8A
+P 6350 1800
+AR Path="/5E0FCF8A" Ref="#PWR?"  Part="1" 
+AR Path="/5E07F403/5E0FCF8A" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 6350 1650 50  0001 C CNN
+F 1 "+3V3" H 6365 1973 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L lucy:RFM96W-433 U5
+U 1 1 5E0BC82F
+P 5850 3600
+AR Path="/5E0BC82F" Ref="U5"  Part="1" 
+AR Path="/5E07F403/5E0BC82F" Ref="U5"  Part="1" 
+F 0 "U5" H 5850 4297 60  0000 C CNN
+F 1 "RFM96W-433" H 5850 4191 60  0000 C CNN
+F 2 "lucy:RFM95W" H 5750 4150 60  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20190801/RFM96W-V2.0.pdf" H 5850 3600 60  0001 C CNN
+	1    5850 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6400 3850
+NoConn ~ 6400 3950
+NoConn ~ 6400 4050
+$EndSCHEMATC
