@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "Lucy"
-Date "2020-11-19"
+Date "2020-11-23"
 Rev "v1.0"
 Comp "www.2-0.dk"
 Comment1 ""
@@ -582,12 +582,8 @@ F 3 "~" H 8450 3000 50  0001 C CNN
 $EndComp
 Text GLabel 4050 3550 0    50   Output ~ 0
 hmi_red
-Text GLabel 8250 3200 0    50   BiDi ~ 0
-pb5
 Text GLabel 4050 3650 0    50   Output ~ 0
 hmi_green
-Text GLabel 4050 4250 0    50   BiDi ~ 0
-pb5
 $Comp
 L power:GND #PWR?
 U 1 1 5EE34B21
@@ -643,5 +639,20 @@ F 2 "lucy:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1700 3800 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1700 3800 50  0001 C CNN
 	1    1550 3800
 	1    0    0    -1  
+$EndComp
+Text GLabel 4050 4250 0    50   BiDi ~ 0
+mux_data
+$Comp
+L power:GND #PWR?
+U 1 1 5FBD0670
+P 8250 3200
+AR Path="/5FBD0670" Ref="#PWR?"  Part="1" 
+AR Path="/5E07BDE0/5FBD0670" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 8250 2950 50  0001 C CNN
+F 1 "GND" V 8255 3072 50  0000 R CNN
+F 2 "" H 8250 3200 50  0001 C CNN
+F 3 "" H 8250 3200 50  0001 C CNN
+	1    8250 3200
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
