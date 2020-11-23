@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "Lucy"
-Date "2020-11-19"
+Date "2020-11-23"
 Rev "v1.0"
 Comp "www.2-0.dk"
 Comment1 ""
